@@ -1,6 +1,6 @@
 FROM mysql:5.7
 
-COPY scripts/sql/ /docker-entrypoint-initdb.d
+COPY db/mysql/scripts/sql/ /docker-entrypoint-initdb.d
 
 ENV MYSQL_ROOT_PASSWORD pass
 ENV SQL_USER root
